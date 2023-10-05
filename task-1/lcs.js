@@ -1,0 +1,1 @@
+let r=process.argv.slice(2),l='';if(r[0])for(let i=0;i<r[0].length;i++){let h='';for(let j=i;j<r[0].length;j++){h+=r[0][j];if(r.every(x=>x.includes(h))&&h.length>l.length)l=h;}}console.log(l);
