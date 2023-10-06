@@ -55,7 +55,7 @@ export class Game {
   }
 
   playRound(computerMove, userMove) {
-    const result = this.gameRules.loseWin(computerMove, userMove);
+    const result = this.gameRules.getGameResult(computerMove, userMove);
     console.log(`Your move: ${userMove}`);
     console.log(`Computer move: ${computerMove}`);
     console.log(`Result: ${result}`);

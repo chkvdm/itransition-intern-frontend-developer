@@ -5,7 +5,7 @@ export class GameRules {
     this.moves = moves;
   }
 
-  loseWin(pcChoice, userChoice) {
+  getGameResult(pcChoice, userChoice) {
     const x = this.moves.indexOf(pcChoice);
     const y = this.moves.indexOf(userChoice);
     if (x == y) {

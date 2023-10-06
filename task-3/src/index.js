@@ -1,10 +1,12 @@
 import { Game } from './clases/game.js';
 
 const moves = process.argv.slice(2);
+const minArgQuantity = 3;
+const argQuantityIsOdd = () => moves.length % 2;
 
 if (
-  moves.length < 3 ||
-  moves.length % 2 === 0 ||
+  moves.length < minArgQuantity ||
+  !argQuantityIsOdd() ||
   new Set(moves).size !== moves.length
 ) {
   console.error('Incorrect arguments.');
